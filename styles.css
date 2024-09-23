@@ -697,3 +697,152 @@ a:hover {
     width: 560px;
     height: 315px;
 }
+
+/* Tablets - Pantallas entre 768px y 1024px */
+@media only screen and (max-width: 1024px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .band {
+        height: 300px;
+        top: 100px;
+    }
+
+    .band .content ul {
+        left: -150px;
+    }
+
+    .features {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .plansbox {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .plan p {
+        padding: 60px 80px;
+    }
+
+    .reviews {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .card-wrapper {
+        height: 400px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+/* Ajuste para pantallas pequeñas (Tabletas y teléfonos) */
+@media only screen and (max-width: 767px) {
+
+    /* Contenedor principal del header */
+    header {
+        display: flex;
+        justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+        align-items: center;
+        padding: 10px 20px; /* Espacio interno adecuado */
+    }
+
+    /* Estilo del logo */
+    header .logo {
+        width: 50px; /* Tamaño adecuado para pantallas pequeñas */
+        height: auto;
+    }
+
+    /* Botón de registrarse */
+    header .registrarse-btn {
+        font-size: 1rem; /* Tamaño de texto adecuado */
+        margin-left: auto; /* Mueve el botón hacia el extremo derecho */
+    }
+
+    /* Icono del menú hamburguesa */
+    header .menu-icon {
+        font-size: 1.5rem; /* Aumentar el tamaño del icono */
+        cursor: pointer;
+        margin-left: 15px; /* Añadir espacio entre el ícono y el botón "Registrarse" */
+    }
+
+    /* Asegurar alineación correcta de los elementos */
+    header .registrarse-btn, header .menu-icon {
+        display: inline-block;
+        vertical-align: middle;
+        vertical-align: middle; /* Alineación vertical en el centro */
+    }
+
+    .band .content ul {
+        left: 0; /* Resetea el desplazamiento hacia la izquierda en móviles */
+        padding: 0; /* Elimina cualquier padding extra */
+    }
+
+    .band .content li {
+        font-size: 2.5em; /* Reduce el tamaño del texto a 2.5em en lugar de 5em */
+        margin-left: 0px; /* Elimina márgenes innecesarios */
+    }
+
+    .band .content li:first-child {
+        margin-left: 0; /* Alinea el primer elemento correctamente */
+    }
+
+    .band .content li:nth-child(2) {
+        margin-left: 0; /* Resetea el margen del segundo elemento */
+    }
+
+    .band .content li:nth-child(3) {
+        margin-left: 0; /* Resetea el margen del tercer elemento */
+    }
+}
+
+/* Ajuste para pantallas muy pequeñas (teléfonos con menos de 480px de ancho) */
+@media only screen and (max-width: 480px) {
+    
+    header {
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+
+    header .registrarse-btn {
+        font-size: 0.9rem; /* Reducir ligeramente el tamaño del texto */
+    }
+
+    header .menu-icon {
+        font-size: 1.3rem; /* Tamaño ligeramente más pequeño del ícono */
+    }
+
+    .band .content li {
+        font-size: 1.8em; /* Reduce aún más el tamaño del texto para pantallas pequeñas */
+    }
+
+    .band .content ul {
+        text-align: center; /* Centra el texto en lugar de alinear a la izquierda */
+    }
+
+    .band .content img {
+        display: none; /* Oculta la imagen en móviles si es necesario */
+    }
+}
