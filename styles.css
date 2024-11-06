@@ -420,7 +420,7 @@ footer {
     width: 65%;
     margin: 0 auto;
     border-radius: 10px;
-    background-image: url(/images/footer_bg.jpg);
+    background-image: url('https://fairfinance-sw62-group-4.github.io/pocket-partners-landing-page/images/footer_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
